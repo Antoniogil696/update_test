@@ -1,6 +1,7 @@
 import logging
 import shutil
 import time
+import requests
 
 from tufup.client import Client
 
@@ -21,6 +22,8 @@ def progress_hook(bytes_downloaded: int, bytes_expected: int):
 
 def update(pre: str, skip_confirmation: bool = False):
     # Create update client
+    sesion=requests.session()
+    sesion.auth=("antoniogil@electrogilbra.com","Paquita696462015")
     client = Client(
         app_name=settings.APP_NAME,
         app_install_dir=settings.INSTALL_DIR,
@@ -30,7 +33,14 @@ def update(pre: str, skip_confirmation: bool = False):
         target_dir=settings.TARGET_DIR,
         target_base_url=settings.TARGET_BASE_URL,
         refresh_required=False,
+        session_auth=sesion
     )
+    # verificar si hay una nueva actualizacion
+    try:
+        new_update = client.check_for_updates(pre=pre)
+    except Exception as e:
+        print("Error al verificar actualizaciones:", e)
+        raise
 
     # Perform update
     new_update = client.check_for_updates(pre=pre)
@@ -41,7 +51,10 @@ def update(pre: str, skip_confirmation: bool = False):
             print('changes in this update:')
             for item in new_update.custom.get('changes', []):
                 print(f'\t- {item}')
+       
+        
         # apply the update
+
         client.download_and_apply_update(
             skip_confirmation=skip_confirmation,
             progress_hook=progress_hook,
@@ -90,3 +103,14 @@ def main(cmd_args):
     print('Doing what the app is supposed to do...')
     ...
     print('Done.')
+
+
+r = requests.get(
+    "https://electrogilbra.com:2078/metadata/timestamp.json",
+    auth=("antoniogil@electrogilbra.com", "Paquita696462015")  # reemplaza si cambian
+)
+
+print(r.status_code)
+print(r.text[:200])  # solo los primeros caracteres para verificar
+
+

@@ -5,11 +5,12 @@ import sys
 
 from tufup.utils.platform_specific import ON_MAC, ON_WINDOWS
 
+
 logger = logging.getLogger(__name__)
 
 # App info
 APP_NAME = 'my_app'  # BEWARE: app name cannot contain whitespace
-APP_VERSION = '1.0'
+APP_VERSION = '2.0'
 
 # On Windows 10, a typical location for app data would be %PROGRAMDATA%\MyApp
 # (per-machine), or %LOCALAPPDATA%\MyApp (per-user). Typical app installation
@@ -55,8 +56,9 @@ METADATA_DIR = UPDATE_CACHE_DIR / 'metadata'
 TARGET_DIR = UPDATE_CACHE_DIR / 'targets'
 
 # Update-server urls
-METADATA_BASE_URL = 'http://localhost:8000/metadata/'
-TARGET_BASE_URL = 'http://localhost:8000/targets/'
+
+METADATA_BASE_URL = 'https://electrogilbra.com:2078/metadata'
+TARGET_BASE_URL = 'https://electrogilbra.com:2078/targets'
 
 # Location of trusted root metadata file
 TRUSTED_ROOT_SRC = MODULE_DIR.parent / 'root.json'
