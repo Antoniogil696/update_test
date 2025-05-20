@@ -1,0 +1,58 @@
+{
+ "signatures": [
+  {
+   "keyid": "d0967db8f4f42592b3794656bd54c31bef38cb13e70d9865094c1f404bda5b1d",
+   "sig": "eb3fae7a48fafeca70333ba271d065b93b2097049b89db18b4ae0bd25fc413046c5f663cef2f60d683be42230ccd406ad922ffb4def24d8a1999f00f61d97a0d"
+  },
+  {
+   "keyid": "3f0ecd6ad9809af5444f1fb86c06b4bd231a4e8d3a25a41933124ffc5039426b",
+   "sig": "41d5937fb7da7a7463af74a39bbd3626c0b4c9dae3f76a3d920742dccd92831f3c46f36c229ffc249215ffe79e01715c14c4a68577ceb013a388842ed988620a"
+  }
+ ],
+ "signed": {
+  "_type": "targets",
+  "expires": "2026-05-19T07:13:51Z",
+  "spec_version": "1.0.31",
+  "targets": {
+   "my_app-1.0.tar.gz": {
+    "custom": {
+     "tufup": {
+      "required": false
+     },
+     "user": null
+    },
+    "hashes": {
+     "sha256": "6ad81b53c9b4a042daa8607b4572feac564cce7321d88a55bec293e3de0923f9"
+    },
+    "length": 17920242
+   },
+   "my_app-2.0.patch": {
+    "custom": {
+     "tufup": {
+      "tar_hash": "9c75eb20e3ab96db04c3fffdca8861cf158044d9abbe0473c9395c895213769b",
+      "tar_hash_algorithm": "sha256",
+      "tar_size": 40939520
+     },
+     "user": null
+    },
+    "hashes": {
+     "sha256": "f40bab42eb3f75b9b8fb67552345aa89eb190bd7d96cf981afbe1f1d54bae633"
+    },
+    "length": 15810
+   },
+   "my_app-2.0.tar.gz": {
+    "custom": {
+     "tufup": {
+      "required": false
+     },
+     "user": null
+    },
+    "hashes": {
+     "sha256": "e1e90259ae11b0a65efdfe884f95845d94f76a61875d7839bd61ee6bac2c047c"
+    },
+    "length": 17921546
+   }
+  },
+  "version": 3
+ }
+}

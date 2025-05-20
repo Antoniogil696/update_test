@@ -1,0 +1,12 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^electrogilbra\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.electrogilbra\.com$
+RewriteRule ^/?$ "https\:\/\/proyectoweb\-a6e8f4f15d4f\.herokuapp\.com\/" [R=301,L]
+
+
+
+<FilesMatch "\.json$">
+    ForceType application/json
+    ErrorDocument 404 default
+</FilesMatch>
