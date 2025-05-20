@@ -1,17 +1,17 @@
 {
  "signatures": [
   {
-   "keyid": "a81f13ca2d3b17612e1ede2d019a45e7756a2b12f84346378706865c2d7d4add",
-   "sig": "9e1e5f43b893c5b1146a5694385c17197167364d8eb96b90b43a5f199d13ace9858f29c8d291c563aaa10f66977b49e3a41bc3067618bc03427fa8614952ce0c"
+   "keyid": "d5b2618297a43fe5eef0d5c3b7694a8654a341f34bd53c3113a66bd99850f1e1",
+   "sig": "af211c35fca738cca3a77a516ed3e65f11f2c9c2b8156fc61bc2f7b287bf994965bd60f6d26297591d6abe8f0190b7e78661e12e372a0278bacd6a98d5686e0d"
   },
   {
-   "keyid": "58b167825263016775c3ad7e4d1d9b073155397d5886e9646b504ad01b4cf0f7",
-   "sig": "e1e6ecafcd237a8d909561c06f523a8dc6a2b542d59264c55446c771c9471b10afda53dc921f90d4ff2088d2c35f14246514093705adf3bedc0adafb9dbc3505"
+   "keyid": "afc9d1983d39447a4f6d95663a9d1f03359c395712abef1bc9a5fc17e4b6b95f",
+   "sig": "e34375e9463f2710f75e49ede12d17a12f08a5f6bd3926db8e4d302f65bf95a3baed222dbac57fea887103d753fe0d3785150187b082ecc7264c69ff74aa3506"
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2026-05-20T05:48:16Z",
+  "expires": "2026-05-20T07:25:48Z",
   "spec_version": "1.0.31",
   "targets": {
    "my_app-1.0.tar.gz": {
@@ -22,23 +22,23 @@
      "user": null
     },
     "hashes": {
-     "sha256": "eb3fae8e448a9fc2c0420e63818d798ca19a40fe2eccee8157a716d38ea8b539"
+     "sha256": "c0658aa15f39e518d91ee64f219f3e6d7db94468d187946c9336f5c55793d23d"
     },
-    "length": 17920145
+    "length": 17920486
    },
    "my_app-2.0.patch": {
     "custom": {
      "tufup": {
-      "tar_hash": "6d4605b4d54584ceeb1bf659dbe7fe99071e0fb9b67a1c0512fc9567bab4ae33",
+      "tar_hash": "4ac4e465d3b65e11cdd0b6cb2a0a90fba44f9ce43103bdb331e56c19135f87fa",
       "tar_hash_algorithm": "sha256",
       "tar_size": 40939520
      },
      "user": null
     },
     "hashes": {
-     "sha256": "74f65e1b68c8dd03214a4f5a869211be878577c0a4e672a766aeae77e8c466c0"
+     "sha256": "7176afdf86820ad4720192dc983a8f968af7794d871694ad4287ded51af4d809"
     },
-    "length": 14019
+    "length": 16118
    },
    "my_app-2.0.tar.gz": {
     "custom": {
@@ -48,9 +48,9 @@
      "user": null
     },
     "hashes": {
-     "sha256": "b8a68870d4d4394045622ad879077c1f42922e69b491e59aa140e422449c5523"
+     "sha256": "ad7aa590d8695fe470f97de40a7bb7d24dadcd61d3a2bd94d43b17e10feea356"
     },
-    "length": 17921111
+    "length": 17920612
    }
   },
   "version": 3
