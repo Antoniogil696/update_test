@@ -33,7 +33,7 @@ def update(pre: str, skip_confirmation: bool = False):
         target_dir=settings.TARGET_DIR,
         target_base_url=settings.TARGET_BASE_URL,
         refresh_required=False,
-        session_auth=sesion
+        #session_auth=sesion
     )
     # verificar si hay una nueva actualizacion
     try:

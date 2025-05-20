@@ -57,8 +57,8 @@ TARGET_DIR = UPDATE_CACHE_DIR / 'targets'
 
 # Update-server urls
 
-METADATA_BASE_URL = 'https://electrogilbra.com:2078/metadata'
-TARGET_BASE_URL = 'https://electrogilbra.com:2078/targets'
+METADATA_BASE_URL = 'https://github.com/Antoniogil696/update_test/tree/1fbb0e7144554f782461f135578f2b42f761e30d/temp_my_app/repository/metadata'
+TARGET_BASE_URL = 'https://github.com/Antoniogil696/update_test/tree/1fbb0e7144554f782461f135578f2b42f761e30d/temp_my_app/repository/targets'
 
 # Location of trusted root metadata file
 TRUSTED_ROOT_SRC = MODULE_DIR.parent / 'root.json'
